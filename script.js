@@ -23,7 +23,7 @@ setInterval(function relog() {
 }, 1000);
 
 // Exibição da data em Espanhol
-function mostrarFechaActualizada() {
+function exibirDataAtualizada() {
     let meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
     let semanas = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
     
