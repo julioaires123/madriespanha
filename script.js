@@ -5,7 +5,7 @@ setInterval(function relog() {
     // Adiciona 23 segundos
     data.setSeconds(data.getSeconds() + 23);
     
-    // Determina o horário de verão na França
+    // Determina o horário de verão na Espanha
     let ano = data.getUTCFullYear();
     let inicioVerao = new Date(ano, 2, 31); // Último domingo de março
     while (inicioVerao.getDay() !== 0) inicioVerao.setDate(inicioVerao.getDate() - 1);
@@ -22,10 +22,10 @@ setInterval(function relog() {
     rel.innerHTML = `${h}:${m}:${s}`;
 }, 1000);
 
-// Exibição da data em francês
-function exibirDataAtualizada() {
-    let meses = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
-    let semanas = ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"];
+// Exibição da data em Espanhol
+function mostrarFechaActualizada() {
+    let meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+    let semanas = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
     
     let data = new Date();
     // Adiciona 23 segundos
@@ -43,7 +43,7 @@ function exibirDataAtualizada() {
     document.getElementById("date").innerHTML = `${semanas[data.getUTCDay()]}, ${data.getUTCDate()} ${meses[data.getUTCMonth()]}, ${data.getUTCFullYear()}`;
 }
 
-// Atualiza a data à meia-noite na França
+// Atualiza a data à meia-noite na Espanha
 function atualizarData() {
     let data = new Date();
     // Adiciona 23 segundos
